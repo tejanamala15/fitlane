@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/Logo.svg" type="image/x-icon" />
+        <title>FITLANE</title>
+        <link rel="stylesheet" href="../css/forms.css" />
+    </head>
+    <body>
+        <h1></h1>
+        <h1></h1>
+        <h1 class="h1one"> FITRACK </h1>
+        
+        
+        <h1></h1>
+        <h1></h1>
+        <!-- <img src="../img/Logo.svg" alt="FitApp" class="logo" />
+        <img src="../img/run.svg" alt="Running" class="running" /> -->
+        <div class="form-container">
+            <h1>Setup your profile</h1>
+            <div class="data-item">
+                <label for="weight">Weight (kg)</label>
+                <input id="weight" type="number" required />
+            </div>
+            <div class="data-item">
+                <label for="height">Height (cm)</label>
+                <input id="height" type="number" required />
+            </div>
+            <div class="data-item">
+                <label for="sex">Sex</label>
+                <select name="sex" id="gender">
+                    <option value="f">Female</option>
+                    <option value="m">Male</option>
+                    <option value="o">Other</option>
+                </select>
+            </div>
+            <div class="data-item">
+                <label for="birth">Date of birth</label>
+                <input id="birth" type="date" required />
+            </div>
+            <button id="save">Save info</button>
+        </div>
+        <!-- <img src="../img/bike.svg" alt="Cycling" class="cycling" /> -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+        <script src="../js/firebase.js"></script>
+        <script src="../js/form.js"></script>
+    </body>
+</html>
